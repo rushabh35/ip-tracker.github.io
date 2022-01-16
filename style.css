@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h1{
+    font-size: 69px;
+    text-align: center;
+    margin: 2rem;
+    font-family: cursive;
+    font-weight: 1000;
+    color: rgb(255, 255, 255);
+}
+.loader{
+    width: 10px;
+    height: 35px;
+    background-color: #fff;
+    margin: 4px;
+}
+.loader1{
+    animation: loading 1s ease-in-out infinite alternate;
+}
+.loader2{
+    animation: loading 1s ease-in-out infinite alternate 0.5s;
+}
+.loader3{
+    animation: loading 1s ease-in-out infinite alternate;
+}
+.loader-container{
+    display: none ;
+}
+body{
+    background: url('planet.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    /* font-family: 'Dongle', sans-serif; */
+
+}
+
+.main-container{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ip-display,
+.location-display,
+.geo-display{
+    color: azure;
+    margin: 0.5rem;
+    font-size: calc(1.5rem + 1vw);
+}
+
+.lookup-btn{
+    border: none;
+    background: rgb(224, 223, 223); 
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.4rem 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: opacity 250ms linear;
+    margin-top: 10px;
+}
+
+.lookup-btn:hover{
+    opacity: 0.8;
+}
+
+@keyframes loading{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1 );
+    }
+}
